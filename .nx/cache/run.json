@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve student",
+    "startTime": "2024-07-14T06:57:00.178Z",
+    "endTime": "2024-07-14T06:57:00.542Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "student:serve:development",
+      "target": "serve",
+      "projectName": "student",
+      "hash": "14153285786006480784",
+      "startTime": "2024-07-14T06:57:00.184Z",
+      "endTime": "2024-07-14T06:57:00.541Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
