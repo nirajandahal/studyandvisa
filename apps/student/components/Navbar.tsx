@@ -18,13 +18,15 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
   return (
-    <nav className="bg-white text-dark-blue w-full inset-x-0 h-16">
+    <nav className="bg-white text-dark-blue w-full inset-x-0 h-16 px-5 sm:px-10 md:px-14 lg:px-24">
       <MaxWidthWrapper className="relative flex justify-between items-center h-full">
-        <div className="flex items-center">
-          <MobileNav />
+        <div className="flex gap-2">
           <Link href="/">
             <Icons.logo className="h-10 w-10 text-electric-violet" />
           </Link>
+          <MobileNav />
+        </div>
+        <div className="flex items-center">
           <div className="hidden ml-8 lg:flex lg:self-stretch">
             <NavItems />
           </div>
