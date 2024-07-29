@@ -74,15 +74,19 @@ const CourseDetails = ({
                       {destination}
                     </Text>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    World Ranking:{' '}
-                    <Text className="text-md text-navy-blue">
-                      {worldRanking}
-                    </Text>
-                    Country Ranking:{' '}
-                    <Text className="text-md text-navy-blue">
-                      {countryRanking}
-                    </Text>
+                  <div className="flex flex-wrap justify-between items-center  gap-2">
+                    <div>
+                      World Ranking:{' '}
+                      <Text className="text-md text-navy-blue">
+                        {worldRanking}
+                      </Text>
+                    </div>
+                    <div>
+                      Country Ranking:{' '}
+                      <Text className="text-md text-navy-blue">
+                        {countryRanking}
+                      </Text>
+                    </div>
                   </div>
                 </div>
               </div>

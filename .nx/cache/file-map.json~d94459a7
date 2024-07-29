@@ -344,7 +344,7 @@
       },
       {
         "file": "apps/student/app/features/Courses/Details/index.tsx",
-        "hash": "9144701779816909371",
+        "hash": "18086248410721552532",
         "deps": [
           "npm:lucide-react",
           "npm:react",
@@ -378,7 +378,7 @@
       },
       {
         "file": "apps/student/app/features/RegisterForm/index.tsx",
-        "hash": "18445890666187672549",
+        "hash": "15101203147367284239",
         "deps": [
           "npm:react",
           "npm:react-hook-form",
@@ -471,7 +471,7 @@
       },
       {
         "file": "apps/student/app/layout.tsx",
-        "hash": "8627360549341103933",
+        "hash": "1674858967897150669",
         "deps": [
           "ui-components"
         ]
@@ -482,7 +482,7 @@
       },
       {
         "file": "apps/student/app/page.tsx",
-        "hash": "10585758746993084822",
+        "hash": "1037220144812165853",
         "deps": [
           "npm:lucide-react",
           "npm:next",
@@ -525,7 +525,7 @@
       },
       {
         "file": "apps/student/app/pages/HeroSection/index.tsx",
-        "hash": "3007713299969299823",
+        "hash": "13215453143559515950",
         "deps": [
           "npm:next"
         ]
@@ -764,7 +764,7 @@
       },
       {
         "file": "apps/student/components/NavItem.tsx",
-        "hash": "1298229846545208460",
+        "hash": "11526962640353657563",
         "deps": [
           "ui-components",
           "npm:lucide-react",
@@ -782,7 +782,7 @@
       },
       {
         "file": "apps/student/components/Navbar.tsx",
-        "hash": "494542214999080297",
+        "hash": "6444091576520216836",
         "deps": [
           "npm:next",
           "npm:lucide-react",
@@ -875,7 +875,7 @@
       },
       {
         "file": "apps/student/tailwind.config.ts",
-        "hash": "11109167167071250742",
+        "hash": "12094237333880540853",
         "deps": [
           "npm:tailwindcss-animate"
         ]

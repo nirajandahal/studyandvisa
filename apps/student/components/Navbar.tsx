@@ -18,8 +18,8 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
   return (
-    <nav className="bg-white text-dark-blue w-full inset-x-0 h-16 px-5 sm:px-10 md:px-14 lg:px-24">
-      <MaxWidthWrapper className="relative flex justify-between items-center h-full">
+    <nav className="bg-primary-blue  w-full inset-x-0 pt-6 ">
+      <MaxWidthWrapper className="relative flex justify-between py-4 items-center text-dark-blue bg-white h-full px-5 sm:px-10 md:px-14 lg:px-24 ">
         <div className="flex gap-2">
           <Link href="/">
             <Icons.logo className="h-10 w-10 text-electric-violet" />

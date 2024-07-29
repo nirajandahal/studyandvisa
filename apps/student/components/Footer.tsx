@@ -60,7 +60,7 @@ const Footer = () => {
   const pathsToMinimize = ['/verify-email', '/sign-up', '/sign-in'];
 
   return (
-    <footer className="bg-light-gray w-full justify-between">
+    <footer className="bg-light-gray w-full justify-between px-5 sm:px-10 md:px-14 lg:px-24">
       <div className="border-t border-gray-200 w-full">
         {pathsToMinimize.includes(pathname) ? null : (
           <div className="relative flex flex-col w-full text-dark-blue justify-between sm:flex-row px-6 py-6 sm:py-8 lg:mt-0">

@@ -153,13 +153,13 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="flex bg-gray-100 justify-center font-['Open_Sans']">
+    <div className="flex bg-tangerine justify-center font-['Open_Sans']">
       <div className="w-full max-w-md sm:w-full">
         <Form onFinish={handleSubmit(onSubmit)} className="px-8 pb-8">
           <div className="text-center mb-8">
             <h1 className="font-bold text-2xl text-dark-blue mt-5 text-center">
               Get Appointment
-            </h1>
+            </h1> 
           </div>
           {/* First Name Input Field */}
           <Form.Item
