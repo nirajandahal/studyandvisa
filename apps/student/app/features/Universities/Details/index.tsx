@@ -145,7 +145,7 @@ const UniversityDetails = ({ searchParams }: any) => {
           </div>
         </section>
 
-        <section className="container bg-white font-['Open_Sans'] leading-1.5">
+        <section className="container bg-white f leading-1.5">
           {universityDetails ? (
             <>
               <section className="py-4">
@@ -192,7 +192,7 @@ const UniversityDetails = ({ searchParams }: any) => {
                   <h1 className="text-dark-blue font-bold text-2xl">
                     University Overview
                   </h1>{' '}
-                  <span className="text-base font-['Open_Sans'] leading-1.5">
+                  <span className="text-base f leading-1.5">
                     {universityDetails?.description}
                   </span>
                 </div>

@@ -76,21 +76,21 @@ export const UniversityPage = () => {
   };
 
   return (
-    <section className="m-5 font-[quicksand]">
+    <section className="my-5 ">
       <MaxWidthWrapper>
         <h2 className="font-bold text-xl md:text-2xl tracking-tight text-center text-dark-blue mb-5">
           Where to Study? Checkout some of Popular Countries
         </h2>
 
         <div className="relative h-52 md:h-96 mt-10 overflow-x-auto rounded-lg scrollbar-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="flex items-center justify-between  gap-5">
             {renderCountries()}
           </div>
         </div>
 
         {/* View All Countries button (conditionally rendered) */}
         {destination.length > 0 && (
-          <div className="flex justify-center font-['Open_Sans']">
+          <div className="flex justify-center f">
             <button
               type="button"
               className="w-full md:w-52 h-12 px-6 bg-dark-blue text-white flex justify-center items-center rounded mt-5"

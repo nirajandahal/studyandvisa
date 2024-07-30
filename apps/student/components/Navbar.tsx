@@ -50,7 +50,7 @@ const Navbar = () => {
             <Link href="/sign-in">
               <button
                 type="button"
-                className="w-full font-['Open_Sans'] md:w-20 h-10 px-4 py-2 bg-dark-blue text-white flex text-center rounded"
+                className="w-full f md:w-20 h-10 px-4 py-2 bg-dark-blue text-white flex text-center rounded"
               >
                 SignIn
               </button>

@@ -97,7 +97,7 @@ const BlogDetails = ({ searchParams }: any) => {
                 </span>
               </div>
               <div
-                className="my-6 text-base font-['Open_Sans'] leading-1.5 "
+                className="my-6 text-base f leading-1.5 "
                 dangerouslySetInnerHTML={{
                   __html: blogData?.contents || '',
                 }}

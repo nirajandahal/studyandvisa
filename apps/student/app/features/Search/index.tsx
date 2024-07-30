@@ -140,7 +140,7 @@ const Search = ({ searchParams }: any) => {
         </Row>
       </section>
 
-      <section className="py-4 font-['Open_Sans'] leading-1.5">
+      <section className="py-4 f leading-1.5">
         {loading ? (
           <div className="text-center mt-4">
             <Spin size="large" />

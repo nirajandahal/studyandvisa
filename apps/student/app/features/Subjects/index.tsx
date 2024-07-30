@@ -173,7 +173,7 @@ const Subject = ({ searchParams }: any) => {
               </Col>
             </Row>
           </section>
-          <section className="flex py-4 font-['Open_Sans'] leading-1.5 text-xl">
+          <section className="flex py-4 f leading-1.5 text-xl">
             <div className="w-full md:w-3/5">
               <div className="bg-white flex flex-col gap-8 md:gap-20 mx-auto md:ml-10 md:flex-row md:flex-wrap">
                 {paginatedUniversities.length > 0 ? (
@@ -226,7 +226,7 @@ const Subject = ({ searchParams }: any) => {
                           href={`/course/details?course=${university.courses[0].slug}`}
                         >
                           <div>
-                            <p className="flex text-dark-blue font-bold text-xl font-['Open_Sans']">
+                            <p className="flex text-dark-blue font-bold text-xl f">
                               <Eye /> View{' '}
                               {university.courses[0]?.subject.length} Subjects{' '}
                               {university.courses[0].courseName}{' '}

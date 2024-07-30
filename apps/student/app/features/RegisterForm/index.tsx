@@ -153,13 +153,13 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="flex bg-tangerine justify-center font-['Open_Sans']">
+    <div className="flex bg-tangerine justify-center f">
       <div className="w-full max-w-md sm:w-full">
         <Form onFinish={handleSubmit(onSubmit)} className="px-8 pb-8">
           <div className="text-center mb-8">
             <h1 className="font-bold text-2xl text-dark-blue mt-5 text-center">
               Get Appointment
-            </h1> 
+            </h1>
           </div>
           {/* First Name Input Field */}
           <Form.Item
@@ -326,7 +326,7 @@ const RegisterForm = () => {
             />
           </Form.Item>
           {/* Counseling Options */}
-          <div className="flex flex-col space-y-3 mb-3 font-['Open_Sans']">
+          <div className="flex flex-col space-y-3 mb-3 f">
             <div
               className={`w-full md:w-60 h-10 px-4 py-2 bg-dark-blue text-white flex text-bold items-center rounded ${
                 counselingOption === 'online' ? 'bg-blue-500 text-white' : ''

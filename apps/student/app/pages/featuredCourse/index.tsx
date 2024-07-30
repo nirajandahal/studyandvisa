@@ -37,7 +37,7 @@ export const FeaturedCourse = () => {
   const handleSlideChange = ({ direction }: any) => {};
 
   return (
-    <section className="m-5 font-[quicksand]">
+    <section className="my-5 ">
       <MaxWidthWrapper className="py-5 lg:py-10">
         <div className="flex justify-center">
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-center text-dark-blue">
@@ -51,7 +51,7 @@ export const FeaturedCourse = () => {
               className="bg-white shadow-lg rounded-lg overflow-hidden"
             >
               <div className="p-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 font-['Open_Sans'] ">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 f ">
                   {course?.courseName}
                 </h3>
                 <hr className="w-full border-t border-blue-500 mb-4 mx-auto" />
@@ -60,10 +60,7 @@ export const FeaturedCourse = () => {
                   {course.subject.length > 0 ? (
                     course.subject.slice(0, 3).map((sub, index) => (
                       <Link href={`/course/details?course=${course?.slug}`}>
-                        <li
-                          key={index}
-                          className="flex items-center gap-2 font-['Open_Sans']"
-                        >
+                        <li key={index} className="flex items-center gap-2 f">
                           <a className="flex items-center gap-2">
                             <ChevronRight size={16} />
                             {sub.subjectName}
@@ -80,7 +77,7 @@ export const FeaturedCourse = () => {
           ))}
         </div>
         {/* {courses.length > 0 && (
-          <div className="flex justify-center font-['Open_Sans']">
+          <div className="flex justify-center f">
             <Link href={`/course/details?course=${courses[0]?.slug}`}>
               <button
                 type="button"

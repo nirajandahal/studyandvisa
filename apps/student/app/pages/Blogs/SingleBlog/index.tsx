@@ -4,7 +4,7 @@ import { renderImage } from 'libs/services/helper';
 
 const Blog = ({ title, image, contents }: any) => {
   return (
-    <div className="bg-white rounded-lg shadow-md mx-2 xl:mx-10 h-[300px] w-[400px] relative overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md h-[300px] w-[400px] relative overflow-hidden">
       <div
         style={{
           backgroundImage: `url(${renderImage({
@@ -22,7 +22,7 @@ const Blog = ({ title, image, contents }: any) => {
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-white text-center px-4">
-            <h5 className="text-lg font-['Open_Sans']">{title}</h5>
+            <h5 className="text-lg f">{title}</h5>
           </div>
         </div>
       </div>

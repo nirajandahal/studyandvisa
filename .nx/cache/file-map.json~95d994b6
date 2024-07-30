@@ -281,7 +281,7 @@
       },
       {
         "file": "apps/student/app/features/BlogDetails/index.tsx",
-        "hash": "920584268714144044",
+        "hash": "11327381041511328464",
         "deps": [
           "npm:react",
           "npm:antd",
@@ -304,7 +304,7 @@
       },
       {
         "file": "apps/student/app/features/Courses/Details/index.tsx",
-        "hash": "9643083317367724776",
+        "hash": "9144701779816909371",
         "deps": [
           "npm:lucide-react",
           "npm:react",
@@ -321,7 +321,7 @@
       },
       {
         "file": "apps/student/app/features/Courses/SubjectList/index.tsx",
-        "hash": "10822513492520790422",
+        "hash": "13315141106877726085",
         "deps": [
           "npm:lucide-react",
           "npm:react"
@@ -338,7 +338,7 @@
       },
       {
         "file": "apps/student/app/features/RegisterForm/index.tsx",
-        "hash": "12607886825040453489",
+        "hash": "18445890666187672549",
         "deps": [
           "npm:react",
           "npm:react-hook-form",
@@ -349,7 +349,7 @@
       },
       {
         "file": "apps/student/app/features/Search/index.tsx",
-        "hash": "8590858412839100454",
+        "hash": "12489637998816353815",
         "deps": [
           "npm:react",
           "npm:antd",
@@ -360,7 +360,7 @@
       },
       {
         "file": "apps/student/app/features/Subjects/index.tsx",
-        "hash": "16018279916688473546",
+        "hash": "9363324373841227252",
         "deps": [
           "npm:react",
           "npm:antd",
@@ -386,7 +386,7 @@
       },
       {
         "file": "apps/student/app/features/Universities/Details/index.tsx",
-        "hash": "17021959913524395618",
+        "hash": "1411258043751990760",
         "deps": [
           "npm:react",
           "npm:antd",
@@ -402,7 +402,7 @@
       },
       {
         "file": "apps/student/app/features/Universities/UniversityCourses/index.tsx",
-        "hash": "533470445375068599"
+        "hash": "4208680900792475223"
       },
       {
         "file": "apps/student/app/features/Universities/UniversityInfo/index.tsx",
@@ -442,7 +442,7 @@
       },
       {
         "file": "apps/student/app/page.tsx",
-        "hash": "16517796979054784732",
+        "hash": "10585758746993084822",
         "deps": [
           "npm:lucide-react",
           "npm:next",
@@ -451,7 +451,7 @@
       },
       {
         "file": "apps/student/app/pages/Blogs/SingleBlog/index.tsx",
-        "hash": "6974298329929922138",
+        "hash": "4174113408724627295",
         "deps": [
           "npm:react",
           "npm:next",
@@ -460,7 +460,7 @@
       },
       {
         "file": "apps/student/app/pages/Blogs/index.tsx",
-        "hash": "2259660305375033531",
+        "hash": "8797716005094570375",
         "deps": [
           "npm:react",
           "ui-components",
@@ -469,7 +469,7 @@
       },
       {
         "file": "apps/student/app/pages/Countries/index.tsx",
-        "hash": "6608474971101904109",
+        "hash": "6823635236826243175",
         "deps": [
           "npm:react",
           "npm:libs/utils",
@@ -478,7 +478,7 @@
       },
       {
         "file": "apps/student/app/pages/Country/index.tsx",
-        "hash": "7980631803058121679",
+        "hash": "14442158470854468576",
         "deps": [
           "npm:next"
         ]
@@ -499,7 +499,7 @@
       },
       {
         "file": "apps/student/app/pages/featuredCourse/index.tsx",
-        "hash": "2069097590349627825",
+        "hash": "16975957434815861028",
         "deps": [
           "npm:react",
           "npm:lucide-react",
@@ -651,7 +651,7 @@
       },
       {
         "file": "apps/student/components/CustomModal.tsx",
-        "hash": "1284422240490519106",
+        "hash": "17150688315559011182",
         "deps": [
           "npm:react",
           "npm:antd",
@@ -742,7 +742,7 @@
       },
       {
         "file": "apps/student/components/Navbar.tsx",
-        "hash": "7400709997063162231",
+        "hash": "494542214999080297",
         "deps": [
           "npm:next",
           "npm:lucide-react",

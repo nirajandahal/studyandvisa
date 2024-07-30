@@ -17,7 +17,7 @@ export default async function Index() {
   return (
     <div className="min-h-screen bg-muted flex justify-center items-center flex-col gap-2 ">
       <HeroSection />
-      <div className="px-5 sm:px-10 md:px-14 lg:px-24">
+      <div className="px-5 sm:px-10 md:px-14 lg:px-24 w-full">
         <FeaturedCourse />
         <UniversityPage />
         <BlogPage />
