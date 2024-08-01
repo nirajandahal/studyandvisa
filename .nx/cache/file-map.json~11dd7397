@@ -1,0 +1,1863 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.6.0",
+  "deps": {
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-dropdown-menu": "^2.0.5",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@reduxjs/toolkit": "^2.1.0",
+    "@swc/helpers": "~0.5.0",
+    "add": "^2.0.6",
+    "antd": "^5.13.3",
+    "antd-img-crop": "^4.21.0",
+    "@ant-design/icons": "4.3.0",
+    "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "cookies-next": "^4.1.1",
+    "embla-carousel-react": "^8.0.0-rc21",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.316.0",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-froala-wysiwyg": "^4.1.4",
+    "react-hook-form": "^7.50.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-progressive-graceful-image": "^0.7.0",
+    "react-quill": "^2.0.0",
+    "react-redux": "^9.1.0",
+    "react-slick": "^0.30.1",
+    "slick-carousel": "^1.8.1",
+    "swiper-react": "^1.0.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.6",
+    "tslib": "^2.3.0",
+    "yarn": "^1.22.21",
+    "@nx/cypress": "16.6.0",
+    "@nx/eslint-plugin": "16.6.0",
+    "@nx/jest": "16.6.0",
+    "@nx/js": "16.10.0",
+    "@nx/linter": "16.6.0",
+    "@nx/next": "^16.10.0",
+    "@nx/react": "16.10.0",
+    "@nx/workspace": "16.6.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.51",
+    "@testing-library/react": "14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "18.14.2",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "18.2.9",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "autoprefixer": "^10.4.14",
+    "babel-jest": "^29.4.1",
+    "cypress": "^12.16.0",
+    "eslint": "~8.15.0",
+    "eslint-config-next": "13.4.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "less-loader": "^12.2.0",
+    "nx": "16.6.0",
+    "postcss": "^8",
+    "prettier": "^2.6.2",
+    "swiper": "^11.0.4",
+    "tailwindcss": "^3.3.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.1.3"
+  },
+  "pathMappings": {
+    "@my-project/ui-components": [
+      "libs/ui-components/src/index.ts"
+    ],
+    "@my-project/ui-components/server": [
+      "libs/ui-components/src/server.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "projectFileMap": {
+    "web-e2e": [
+      {
+        "file": "apps/web-e2e/.eslintrc.json",
+        "hash": "10799368048025705622"
+      },
+      {
+        "file": "apps/web-e2e/cypress.config.ts",
+        "hash": "10128070837426886452",
+        "deps": [
+          "npm:cypress",
+          "npm:@nx/cypress"
+        ]
+      },
+      {
+        "file": "apps/web-e2e/project.json",
+        "hash": "275229913948446696"
+      },
+      {
+        "file": "apps/web-e2e/src/e2e/app.cy.ts",
+        "hash": "4207475428935347068"
+      },
+      {
+        "file": "apps/web-e2e/src/fixtures/example.json",
+        "hash": "17341819486505642070"
+      },
+      {
+        "file": "apps/web-e2e/src/support/app.po.ts",
+        "hash": "5364106453863571025"
+      },
+      {
+        "file": "apps/web-e2e/src/support/commands.ts",
+        "hash": "11031723810997510506"
+      },
+      {
+        "file": "apps/web-e2e/src/support/e2e.ts",
+        "hash": "15928825062325902088"
+      },
+      {
+        "file": "apps/web-e2e/tsconfig.json",
+        "hash": "6711070650399197251"
+      }
+    ],
+    "student": [
+      {
+        "file": "apps/student/.eslintrc.json",
+        "hash": "8466369397535166188"
+      },
+      {
+        "file": "apps/student/Dockerfile",
+        "hash": "8263291703660299441"
+      },
+      {
+        "file": "apps/student/app/(auth)/sign-in/page.tsx",
+        "hash": "16053355399956421042"
+      },
+      {
+        "file": "apps/student/app/(auth)/sign-up/page.tsx",
+        "hash": "16778152057014981503"
+      },
+      {
+        "file": "apps/student/app/api/blog/index.tsx",
+        "hash": "9217013675868272550",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/courses/index.tsx",
+        "hash": "11239169698717012407",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/search/index.tsx",
+        "hash": "12320063848183053079",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/studyDestination/index.tsx",
+        "hash": "4835988742421058783",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/studyLevel/index.tsx",
+        "hash": "16234960437737842072",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/university/index.tsx",
+        "hash": "15374743063564121063",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/api/user/index.tsx",
+        "hash": "11534422002693684748",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/student/app/blog/details/page.tsx",
+        "hash": "10127230895879097018"
+      },
+      {
+        "file": "apps/student/app/blog/page.tsx",
+        "hash": "11171645804194937191"
+      },
+      {
+        "file": "apps/student/app/course/details/page.tsx",
+        "hash": "139557245573264968"
+      },
+      {
+        "file": "apps/student/app/course/page.tsx",
+        "hash": "6808408508424832083",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Auth/Login/index.tsx",
+        "hash": "12351527396862183157",
+        "deps": [
+          "npm:@radix-ui/react-dropdown-menu",
+          "ui-components",
+          "npm:libs/utils",
+          "npm:lucide-react",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Auth/Register/index.tsx",
+        "hash": "17389733986293280121",
+        "deps": [
+          "npm:@radix-ui/react-dropdown-menu",
+          "ui-components",
+          "npm:libs/utils",
+          "npm:lucide-react",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/BlogDetails/index.tsx",
+        "hash": "920584268714144044",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:../../../../../libs/NameFormatter",
+          "npm:lucide-react",
+          "npm:libs/services/helper",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Blogs/index.tsx",
+        "hash": "9885383325563121784",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react",
+          "npm:libs/services/helper",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Courses/Details/index.tsx",
+        "hash": "9643083317367724776",
+        "deps": [
+          "npm:lucide-react",
+          "npm:react",
+          "npm:antd",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Courses/Subject/index.tsx",
+        "hash": "9604470840461123588",
+        "deps": [
+          "npm:lucide-react"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Courses/SubjectList/index.tsx",
+        "hash": "10822513492520790422",
+        "deps": [
+          "npm:lucide-react",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Courses/index.tsx",
+        "hash": "5038948646135379493",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/RegisterForm/index.tsx",
+        "hash": "18348192026610833616",
+        "deps": [
+          "npm:react",
+          "npm:react-hook-form",
+          "npm:antd",
+          "npm:../../../../../libs/countiesList/countryList",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Search/index.tsx",
+        "hash": "8590858412839100454",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react",
+          "npm:libs/services/helper",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Subjects/index.tsx",
+        "hash": "16306120435639744399",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react",
+          "npm:next",
+          "npm:libs/services/helper"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Universities/Details/Finances/index.tsx",
+        "hash": "5943520404758804538",
+        "deps": [
+          "npm:react",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Universities/Details/RankingCard/index.tsx",
+        "hash": "18414046811049867839",
+        "deps": [
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Universities/Details/index.tsx",
+        "hash": "17021959913524395618",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react",
+          "npm:next",
+          "npm:libs/utils",
+          "npm:libs/services/helper"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Universities/LanguageRequirement/index.tsx",
+        "hash": "12193616869495166935"
+      },
+      {
+        "file": "apps/student/app/features/Universities/UniversityCourses/index.tsx",
+        "hash": "533470445375068599"
+      },
+      {
+        "file": "apps/student/app/features/Universities/UniversityInfo/index.tsx",
+        "hash": "17919413311266425174",
+        "deps": [
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/app/features/Universities/index.tsx",
+        "hash": "10230684078469855959",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:lucide-react",
+          "npm:libs/utils",
+          "npm:next",
+          "npm:libs/services/helper",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/student/app/global.css",
+        "hash": "17179752249328564166"
+      },
+      {
+        "file": "apps/student/app/layout.tsx",
+        "hash": "8627360549341103933",
+        "deps": [
+          "ui-components"
+        ]
+      },
+      {
+        "file": "apps/student/app/page.module.css",
+        "hash": "5708835840392938794"
+      },
+      {
+        "file": "apps/student/app/page.tsx",
+        "hash": "16517796979054784732",
+        "deps": [
+          "npm:lucide-react",
+          "npm:next",
+          "ui-components"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/Blogs/SingleBlog/index.tsx",
+        "hash": "6974298329929922138",
+        "deps": [
+          "npm:react",
+          "npm:next",
+          "npm:libs/services/helper"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/Blogs/index.tsx",
+        "hash": "2259660305375033531",
+        "deps": [
+          "npm:react",
+          "ui-components",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/Countries/index.tsx",
+        "hash": "6608474971101904109",
+        "deps": [
+          "npm:react",
+          "npm:libs/utils",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/Country/index.tsx",
+        "hash": "7980631803058121679",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/HeroSection/index.tsx",
+        "hash": "3007713299969299823",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/course/page.tsx",
+        "hash": "8900892343268640237",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/app/pages/featuredCourse/index.tsx",
+        "hash": "2069097590349627825",
+        "deps": [
+          "npm:react",
+          "npm:lucide-react",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/app/search/page.tsx",
+        "hash": "2826346437132366772"
+      },
+      {
+        "file": "apps/student/app/subject/page.tsx",
+        "hash": "1575620018507684307"
+      },
+      {
+        "file": "apps/student/app/university/details/page.tsx",
+        "hash": "18183562303496782429"
+      },
+      {
+        "file": "apps/student/app/university/page.tsx",
+        "hash": "633120449707094120"
+      },
+      {
+        "file": "apps/student/assets/icons/ActiveRegion.svg",
+        "hash": "6675268837939451900"
+      },
+      {
+        "file": "apps/student/assets/icons/ActiveTrekSpecialistsIcon.svg",
+        "hash": "15936357805685897541"
+      },
+      {
+        "file": "apps/student/assets/icons/Activedestination.svg",
+        "hash": "5295269921117133317"
+      },
+      {
+        "file": "apps/student/assets/icons/BookingIcon.svg",
+        "hash": "4549837546504462780"
+      },
+      {
+        "file": "apps/student/assets/icons/CanceledIcon.svg",
+        "hash": "4529029566467032457"
+      },
+      {
+        "file": "apps/student/assets/icons/LogisticPartnerIcon.svg",
+        "hash": "14246296689695426781"
+      },
+      {
+        "file": "apps/student/assets/icons/Ongoing Treks icon-1.svg",
+        "hash": "15816156427204700407"
+      },
+      {
+        "file": "apps/student/assets/icons/OngoingTreksIcon.svg",
+        "hash": "3740760834888643817"
+      },
+      {
+        "file": "apps/student/assets/icons/TotalRegion.svg",
+        "hash": "8295488031427231630"
+      },
+      {
+        "file": "apps/student/assets/icons/Totaldestination.svg",
+        "hash": "5154738900023604528"
+      },
+      {
+        "file": "apps/student/assets/icons/TrekSpecialistIcon.svg",
+        "hash": "5623815092461936915"
+      },
+      {
+        "file": "apps/student/assets/icons/UpcomingTreks.svg",
+        "hash": "1827221829664385913"
+      },
+      {
+        "file": "apps/student/assets/icons/index.ts",
+        "hash": "14322108184711489527"
+      },
+      {
+        "file": "apps/student/assets/icons/message.svg",
+        "hash": "609983183761540741"
+      },
+      {
+        "file": "apps/student/assets/icons/newBooking.svg",
+        "hash": "16169090639716247148"
+      },
+      {
+        "file": "apps/student/assets/icons/scheduledmessage.svg",
+        "hash": "13194501494201812844"
+      },
+      {
+        "file": "apps/student/assets/images/.~lock.Individual-project (1).docx#",
+        "hash": "7788985491668856255"
+      },
+      {
+        "file": "apps/student/assets/images/.~lock.Individual-project.docx#",
+        "hash": "1981608348489366876"
+      },
+      {
+        "file": "apps/student/assets/images/Individual-project (1).docx",
+        "hash": "16997979101067204139"
+      },
+      {
+        "file": "apps/student/assets/images/Individual-project.docx",
+        "hash": "16997979101067204139"
+      },
+      {
+        "file": "apps/student/assets/images/australia.jpg",
+        "hash": "5101479281139430204"
+      },
+      {
+        "file": "apps/student/assets/images/banner.png",
+        "hash": "1202706178552811078"
+      },
+      {
+        "file": "apps/student/assets/images/banner1.png",
+        "hash": "375975521611583338"
+      },
+      {
+        "file": "apps/student/assets/images/cover.png",
+        "hash": "17324045624926970181"
+      },
+      {
+        "file": "apps/student/assets/images/france.jpg",
+        "hash": "17324327081183054114"
+      },
+      {
+        "file": "apps/student/assets/images/newbanner.png",
+        "hash": "1202706178552811078"
+      },
+      {
+        "file": "apps/student/assets/images/student.jpg",
+        "hash": "9692820045975943626"
+      },
+      {
+        "file": "apps/student/assets/images/student2.png",
+        "hash": "7187124044782045354"
+      },
+      {
+        "file": "apps/student/assets/images/uk.jpg",
+        "hash": "1979520642983506605"
+      },
+      {
+        "file": "apps/student/assets/images/usa.jpg",
+        "hash": "3222388818772780503"
+      },
+      {
+        "file": "apps/student/components/CarouselControls.tsx",
+        "hash": "2447910952599688407",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/CustomModal.tsx",
+        "hash": "1284422240490519106",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:cookies-next",
+          "npm:libs/services/helper",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/components/CustomSearch.tsx/index.tsx",
+        "hash": "14096343477189980867",
+        "deps": [
+          "npm:lucide-react",
+          "npm:react",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/student/components/Footer.tsx",
+        "hash": "3599556037757796480",
+        "deps": [
+          "npm:next",
+          "ui-components",
+          "npm:@radix-ui/react-icons",
+          "npm:lucide-react"
+        ]
+      },
+      {
+        "file": "apps/student/components/Icons.tsx",
+        "hash": "5796744155281946867",
+        "deps": [
+          "npm:lucide-react"
+        ]
+      },
+      {
+        "file": "apps/student/components/ImageLoading/index.tsx",
+        "hash": "12411599859733698228",
+        "deps": [
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/ImageSlide.tsx",
+        "hash": "18159704057899602588",
+        "deps": [
+          "npm:next",
+          "npm:swiper",
+          "npm:react",
+          "npm:../../../libs/utils",
+          "npm:lucide-react"
+        ]
+      },
+      {
+        "file": "apps/student/components/MaxWidthWrapper.tsx",
+        "hash": "17599528475326769280",
+        "deps": [
+          "npm:../../../libs/utils",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/MobileNav.tsx",
+        "hash": "10021463347403332991",
+        "deps": [
+          "npm:lucide-react",
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/NavItem.tsx",
+        "hash": "1298229846545208460",
+        "deps": [
+          "ui-components",
+          "npm:lucide-react",
+          "npm:../../../libs/utils",
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/NavItems.tsx",
+        "hash": "8655895313509417745",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/Navbar.tsx",
+        "hash": "7400709997063162231",
+        "deps": [
+          "npm:next",
+          "npm:lucide-react",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/components/ProgressiveImage.tsx",
+        "hash": "15444174225858636136",
+        "deps": [
+          "npm:clsx",
+          "npm:next",
+          "npm:react",
+          "npm:react-progressive-graceful-image"
+        ]
+      },
+      {
+        "file": "apps/student/components/Tab.tsx/index.tsx",
+        "hash": "3582768045262298070",
+        "deps": [
+          "npm:react",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/student/config/index.ts",
+        "hash": "2710976258590851637"
+      },
+      {
+        "file": "apps/student/feature/Countries/List/index.tsx",
+        "hash": "12463519321959439538",
+        "deps": [
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/hooks/use-auth.ts",
+        "hash": "6311814499555052464",
+        "deps": [
+          "npm:next",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/student/hooks/use-cart.ts",
+        "hash": "1389868326933519382"
+      },
+      {
+        "file": "apps/student/hooks/use-on-click-outside.ts",
+        "hash": "16356319820832001853",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/student/index.d.ts",
+        "hash": "17021007320214501298"
+      },
+      {
+        "file": "apps/student/jest.config.ts",
+        "hash": "13483648867376700609"
+      },
+      {
+        "file": "apps/student/next-env.d.ts",
+        "hash": "650381615855576712"
+      },
+      {
+        "file": "apps/student/next.config.js",
+        "hash": "7755560196136008786",
+        "deps": [
+          "npm:@nx/next"
+        ]
+      },
+      {
+        "file": "apps/student/postcss.config.js",
+        "hash": "14186219912588415944"
+      },
+      {
+        "file": "apps/student/project.json",
+        "hash": "4317559677587428889"
+      },
+      {
+        "file": "apps/student/public/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/student/public/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/student/tailwind.config.ts",
+        "hash": "11109167167071250742",
+        "deps": [
+          "npm:tailwindcss-animate"
+        ]
+      },
+      {
+        "file": "apps/student/tsconfig.json",
+        "hash": "3211278442344177970"
+      },
+      {
+        "file": "apps/student/tsconfig.spec.json",
+        "hash": "4919308245432237962"
+      }
+    ],
+    "ui-components": [
+      {
+        "file": "libs/ui-components/.eslintrc.json",
+        "hash": "14830867113928387670"
+      },
+      {
+        "file": "libs/ui-components/README.md",
+        "hash": "12548925782860796726"
+      },
+      {
+        "file": "libs/ui-components/project.json",
+        "hash": "302805061713150011"
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/button.tsx",
+        "hash": "7340268569537250527",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-slot",
+          "npm:class-variance-authority"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/card.tsx",
+        "hash": "18134798801765514689",
+        "deps": [
+          "npm:libs/utils",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/carousel.tsx",
+        "hash": "10916784331656419611",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-icons",
+          "npm:embla-carousel-react",
+          "npm:libs/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/dropdown-menu.tsx",
+        "hash": "4384608500766801117",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-dropdown-menu",
+          "npm:lucide-react",
+          "npm:@/lib/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/input.tsx",
+        "hash": "9589804949693767747",
+        "deps": [
+          "npm:libs/utils",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/label.tsx",
+        "hash": "17503056961393992184",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-label",
+          "npm:class-variance-authority",
+          "npm:@/lib/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/scroll-area.tsx",
+        "hash": "6935711190906316001",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-scroll-area",
+          "npm:@/lib/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/separator.tsx",
+        "hash": "12243759279693609255",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-separator",
+          "npm:@/lib/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/sheet.tsx",
+        "hash": "17629285906304489233",
+        "deps": [
+          "npm:react",
+          "npm:@radix-ui/react-dialog",
+          "npm:class-variance-authority",
+          "npm:lucide-react",
+          "npm:@/lib/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/components/ui/skeleton.tsx",
+        "hash": "16759406428549336757",
+        "deps": [
+          "npm:../../../../../libs/utils"
+        ]
+      },
+      {
+        "file": "libs/ui-components/src/index.ts",
+        "hash": "280354783552838480"
+      },
+      {
+        "file": "libs/ui-components/src/utils.ts",
+        "hash": "12218829721157087250",
+        "deps": [
+          "npm:clsx",
+          "npm:tailwind-merge"
+        ]
+      },
+      {
+        "file": "libs/ui-components/tsconfig.json",
+        "hash": "13979398437825372391"
+      },
+      {
+        "file": "libs/ui-components/tsconfig.lib.json",
+        "hash": "14522012350466460893"
+      }
+    ],
+    "web": [
+      {
+        "file": "apps/web/.eslintrc.json",
+        "hash": "18112677222906051524"
+      },
+      {
+        "file": "apps/web/app/MeButton.tsx",
+        "hash": "14701863870353039835",
+        "deps": [
+          "ui-components",
+          "npm:@radix-ui/react-icons"
+        ]
+      },
+      {
+        "file": "apps/web/app/global.css",
+        "hash": "5504194536579599970"
+      },
+      {
+        "file": "apps/web/app/layout.tsx",
+        "hash": "17708059818412050683"
+      },
+      {
+        "file": "apps/web/app/page.tsx",
+        "hash": "6160880787137449060",
+        "deps": [
+          "ui-components"
+        ]
+      },
+      {
+        "file": "apps/web/index.d.ts",
+        "hash": "17021007320214501298"
+      },
+      {
+        "file": "apps/web/jest.config.ts",
+        "hash": "12554993952442869933"
+      },
+      {
+        "file": "apps/web/next-env.d.ts",
+        "hash": "650381615855576712"
+      },
+      {
+        "file": "apps/web/next.config.js",
+        "hash": "16674934739783306363",
+        "deps": [
+          "npm:@nx/next"
+        ]
+      },
+      {
+        "file": "apps/web/postcss.config.js",
+        "hash": "4080954692028639031",
+        "deps": [
+          "npm:path"
+        ]
+      },
+      {
+        "file": "apps/web/project.json",
+        "hash": "17139522827948649237"
+      },
+      {
+        "file": "apps/web/public/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/web/public/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/web/tailwind.config.js",
+        "hash": "10956063279780276858",
+        "deps": [
+          "npm:tailwindcss",
+          "npm:@nx/react",
+          "npm:path",
+          "npm:tailwindcss-animate"
+        ]
+      },
+      {
+        "file": "apps/web/tsconfig.json",
+        "hash": "14621162479072158584"
+      },
+      {
+        "file": "apps/web/tsconfig.spec.json",
+        "hash": "4919308245432237962"
+      }
+    ],
+    "admin": [
+      {
+        "file": "apps/admin/.eslintrc.json",
+        "hash": "8913878934697895861"
+      },
+      {
+        "file": "apps/admin/Dockerfile",
+        "hash": "4826139473563323280"
+      },
+      {
+        "file": "apps/admin/Provider/index.tsx",
+        "hash": "927596986087528202",
+        "deps": [
+          "npm:react-redux"
+        ]
+      },
+      {
+        "file": "apps/admin/app/antDesignStyles.less",
+        "hash": "15819399862320556186"
+      },
+      {
+        "file": "apps/admin/app/api/Auth.ts",
+        "hash": "3999889000240473902",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/Blogs/index.ts",
+        "hash": "7705874188925458748",
+        "deps": [
+          "npm:axios",
+          "npm:js-cookie"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/Course/index.ts",
+        "hash": "14278720780844561778",
+        "deps": [
+          "npm:axios",
+          "npm:js-cookie"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/Destinations/index.tsx",
+        "hash": "11409324828868283029",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/FileUpload/index.tsx",
+        "hash": "5181197626037899765",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/Students/index.tsx",
+        "hash": "9170283897979709031",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/University/index.tsx",
+        "hash": "11713325666100930243",
+        "deps": [
+          "npm:axios",
+          "npm:js-cookie"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/User/index.tsx",
+        "hash": "8911031607508155877",
+        "deps": [
+          "npm:axios",
+          "npm:js-cookie"
+        ]
+      },
+      {
+        "file": "apps/admin/app/api/studylevel/index.ts",
+        "hash": "17036088647075869207",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/auth/forgot-password.tsx",
+        "hash": "11550580460972783463"
+      },
+      {
+        "file": "apps/admin/app/auth/resend-email.tsx",
+        "hash": "14834493638847049872"
+      },
+      {
+        "file": "apps/admin/app/auth/reset-password.tsx",
+        "hash": "4345317377521797205"
+      },
+      {
+        "file": "apps/admin/app/auth/verify-email.tsx",
+        "hash": "8415887660816545742"
+      },
+      {
+        "file": "apps/admin/app/blogs/create/page.tsx",
+        "hash": "12707773156847509622",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/blogs/edit/page.tsx",
+        "hash": "12239002137775014268",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/blogs/page.tsx",
+        "hash": "13659299805951143768",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/course/create/page.tsx",
+        "hash": "10868545120721460835",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/course/edit/page.tsx",
+        "hash": "16906368469950382837",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/course/page.tsx",
+        "hash": "7017718939158189849",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/Form/Types/index.ts",
+        "hash": "10125105416264655578"
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/Form/components/blogs.tsx",
+        "hash": "14382200855737956440",
+        "deps": [
+          "npm:antd",
+          "npm:next",
+          "npm:react",
+          "npm:react-hook-form",
+          "npm:@hookform/resolvers",
+          "npm:libs/services/helper"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/Form/constant.ts",
+        "hash": "2648139604029109284"
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/Form/index.tsx",
+        "hash": "16909022171509269191",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/Form/validation.ts",
+        "hash": "11287945310393699205",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Blogs/List/index.tsx",
+        "hash": "13188931299551894551",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:@ant-design/icons",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Course/Category/Form/index.tsx",
+        "hash": "13906829705078961459"
+      },
+      {
+        "file": "apps/admin/app/features/Course/Category/index.tsx",
+        "hash": "951542429707728552"
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/Types/index.ts",
+        "hash": "1008679866114287617"
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/components/Level/index.tsx",
+        "hash": "1843029575505911011",
+        "deps": [
+          "npm:react",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/components/course.tsx",
+        "hash": "12517841785147881461",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:next",
+          "npm:react-hook-form",
+          "npm:@hookform/resolvers"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/constant.ts",
+        "hash": "10279296597912140675"
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/index.tsx",
+        "hash": "15316304965119728292",
+        "deps": [
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Course/Form/validation.ts",
+        "hash": "5587202862173747117",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/Course/List/index.tsx",
+        "hash": "17740721373256289317",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:@ant-design/icons",
+          "npm:next",
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/University/Form/Types/index.ts",
+        "hash": "2737039090308987336"
+      },
+      {
+        "file": "apps/admin/app/features/University/Form/components/university.tsx",
+        "hash": "474974579613210151",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:next",
+          "npm:react-hook-form",
+          "npm:@hookform/resolvers",
+          "npm:libs/services/helper"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/University/Form/constant.ts",
+        "hash": "2325797953160399388"
+      },
+      {
+        "file": "apps/admin/app/features/University/Form/index.tsx",
+        "hash": "6999494504650526282",
+        "deps": [
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/University/Form/validation.ts",
+        "hash": "10140883622205262450",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/University/List/index.tsx",
+        "hash": "8711501000276233805",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:@ant-design/icons",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/auth/Login.tsx",
+        "hash": "11727595730081479888",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:react-redux",
+          "npm:react-hook-form",
+          "npm:next",
+          "npm:js-cookie",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/auth/LogoutButton.tsx",
+        "hash": "11989319214592801095",
+        "deps": [
+          "npm:antd",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/auth/Profile.tsx",
+        "hash": "12884645800603545613",
+        "deps": [
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/students/List/index.tsx",
+        "hash": "8501187245461244182",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:@ant-design/icons",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/Types/index.ts",
+        "hash": "1008679866114287617"
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/components/Level/index.tsx",
+        "hash": "6811692452732401280"
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/components/user.tsx",
+        "hash": "15924041969411468874",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:next",
+          "npm:react-hook-form",
+          "npm:@hookform/resolvers"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/constant.ts",
+        "hash": "10279296597912140675"
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/index.tsx",
+        "hash": "7567117245897811532",
+        "deps": [
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/user/Form/validation.ts",
+        "hash": "9730747845397337256",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/user/List/UserDetailsSection.tsx",
+        "hash": "3044866167064845223"
+      },
+      {
+        "file": "apps/admin/app/features/user/List/index.tsx",
+        "hash": "10634742530490223146",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:@ant-design/icons",
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/app/features/user/hooks/useGetUserList.ts",
+        "hash": "12439931177061409136"
+      },
+      {
+        "file": "apps/admin/app/global.css",
+        "hash": "11460636338931300152"
+      },
+      {
+        "file": "apps/admin/app/jtDesignSystem.less",
+        "hash": "4937508183727024954"
+      },
+      {
+        "file": "apps/admin/app/layout.tsx",
+        "hash": "12396151039612155513"
+      },
+      {
+        "file": "apps/admin/app/page.module.css",
+        "hash": "5708835840392938794"
+      },
+      {
+        "file": "apps/admin/app/page.tsx",
+        "hash": "13508095666935449829"
+      },
+      {
+        "file": "apps/admin/app/profile/index.tsx",
+        "hash": "5725209932165511244"
+      },
+      {
+        "file": "apps/admin/app/students/page.tsx",
+        "hash": "337866432884023077",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/styles.css",
+        "hash": "3124823166465419815"
+      },
+      {
+        "file": "apps/admin/app/university/create/page.tsx",
+        "hash": "8347987228558515145",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/university/edit/page.tsx",
+        "hash": "14813912943533023003",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/university/page.tsx",
+        "hash": "1272337323764499246",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/user/create/page.tsx",
+        "hash": "1928918586084205341",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/user/page.tsx",
+        "hash": "12828644631399295221",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/app/users/[id].tsx",
+        "hash": "18152585017807080497"
+      },
+      {
+        "file": "apps/admin/app/users/page.tsx",
+        "hash": "1272337323764499246",
+        "deps": [
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/DebounceInput.tsx",
+        "hash": "2777065469018177367"
+      },
+      {
+        "file": "apps/admin/components/DeleteModal/index.tsx",
+        "hash": "1426471553312657935",
+        "deps": [
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/FileUpload/index.ts",
+        "hash": "2538511323262429990",
+        "deps": [
+          "npm:antd",
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/admin/components/PublicPages.tsx",
+        "hash": "3160986197043144003",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCAdminCard/index.tsx",
+        "hash": "15177010963853647659",
+        "deps": [
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCCheckbox/index.tsx",
+        "hash": "6962538410501748472",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCDatePicker/index.tsx",
+        "hash": "2021087342198017995"
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCDragger/index.tsx",
+        "hash": "10421997100873352987",
+        "deps": [
+          "npm:@ant-design/icons",
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCEditor/index.tsx",
+        "hash": "13407636087569176991"
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCInput/index.tsx",
+        "hash": "4158067005276798336",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:react-hook-form",
+          "npm:react-phone-input-2"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCInputNumber/index.tsx",
+        "hash": "12063918523263358314",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCRadio/index.tsx",
+        "hash": "986564671261532594",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCRating/index.tsx",
+        "hash": "4798066647497685081"
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCSelect/index.tsx",
+        "hash": "18339570918101579741",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCSelectGroup/index.tsx",
+        "hash": "2863854200314221765"
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCSelectSingle/index.tsx",
+        "hash": "6090844823487775459",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCSwitch/index.tsx",
+        "hash": "7692540254497653960",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCTextArea/index.tsx",
+        "hash": "15732961196384931711",
+        "deps": [
+          "npm:react-hook-form",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCTimePicker/index.tsx",
+        "hash": "3290025274972169883"
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCUpload/index.tsx",
+        "hash": "11460120542655123952",
+        "deps": [
+          "npm:@ant-design/icons",
+          "npm:antd",
+          "npm:antd-img-crop",
+          "npm:axios",
+          "npm:react",
+          "npm:react-hook-form"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCUploadV2/index.tsx",
+        "hash": "13749934331599918634",
+        "deps": [
+          "npm:react",
+          "npm:@ant-design/icons",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCWysiwyg/index.tsx",
+        "hash": "1771890967455805397",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCForm/SCWysiwyg/nossr.tsx",
+        "hash": "13643518939413146527",
+        "deps": [
+          "npm:react",
+          "npm:antd",
+          "npm:froala-editor",
+          "npm:react-froala-wysiwyg",
+          "npm:react-hook-form"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCLayout_v2/Head.tsx",
+        "hash": "10426906793514237058",
+        "deps": [
+          "npm:next"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCLayout_v2/SideBar.tsx",
+        "hash": "9246533614509974994",
+        "deps": [
+          "npm:@ant-design/icons",
+          "npm:antd",
+          "npm:next",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCLayout_v2/index.tsx",
+        "hash": "14847658364297954504",
+        "deps": [
+          "npm:antd",
+          "npm:next",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/SCLoader/index.tsx",
+        "hash": "915583823990205238",
+        "deps": [
+          "npm:@ant-design/icons",
+          "npm:antd"
+        ]
+      },
+      {
+        "file": "apps/admin/components/StatsLoader/index.tsx",
+        "hash": "15019713861631870483",
+        "deps": [
+          "npm:antd",
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/admin/components/auth/SCAuthorizedApolloProvider.tsx",
+        "hash": "10048680899866170218",
+        "deps": [
+          "npm:react",
+          "npm:axios",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/components/auth/refreshToken.ts",
+        "hash": "8042958161718464456"
+      },
+      {
+        "file": "apps/admin/constants/SideNavItems.tsx",
+        "hash": "10292971852389383039"
+      },
+      {
+        "file": "apps/admin/constants/languageList.ts",
+        "hash": "4192902238597277121"
+      },
+      {
+        "file": "apps/admin/constants/publicRoutes.ts",
+        "hash": "5663136748278203914"
+      },
+      {
+        "file": "apps/admin/helper/RatingSwitch.tsx",
+        "hash": "4900630718982814273"
+      },
+      {
+        "file": "apps/admin/helper/capitalize.ts",
+        "hash": "9842975210111265573"
+      },
+      {
+        "file": "apps/admin/helper/downloadCsv.ts",
+        "hash": "7901482677840818408",
+        "deps": [
+          "npm:axios",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/helper/imageType.ts",
+        "hash": "7577386025020952146"
+      },
+      {
+        "file": "apps/admin/helper/quillValidate.ts",
+        "hash": "5863505512225772241"
+      },
+      {
+        "file": "apps/admin/hooks/usePermissions.ts",
+        "hash": "12867403536806526095"
+      },
+      {
+        "file": "apps/admin/index.d.ts",
+        "hash": "17021007320214501298"
+      },
+      {
+        "file": "apps/admin/jest.config.ts",
+        "hash": "5963430290083124711"
+      },
+      {
+        "file": "apps/admin/next-env.d.ts",
+        "hash": "650381615855576712"
+      },
+      {
+        "file": "apps/admin/next.config.js",
+        "hash": "16674934739783306363",
+        "deps": [
+          "npm:@nx/next"
+        ]
+      },
+      {
+        "file": "apps/admin/postcss.config.js",
+        "hash": "14186219912588415944"
+      },
+      {
+        "file": "apps/admin/project.json",
+        "hash": "4430938878649261100"
+      },
+      {
+        "file": "apps/admin/public/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/admin/public/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/admin/store/index.ts",
+        "hash": "16052583157883777097",
+        "deps": [
+          "npm:@reduxjs/toolkit"
+        ]
+      },
+      {
+        "file": "apps/admin/store/useUser.ts",
+        "hash": "6426163106336959370",
+        "deps": [
+          "npm:axios",
+          "npm:next",
+          "npm:react",
+          "npm:react-redux"
+        ]
+      },
+      {
+        "file": "apps/admin/store/userSlice.ts",
+        "hash": "3493634664637121648",
+        "deps": [
+          "npm:@reduxjs/toolkit",
+          "npm:cookies-next"
+        ]
+      },
+      {
+        "file": "apps/admin/tailwind.config.ts",
+        "hash": "2548065409641345165",
+        "deps": [
+          "npm:tailwindcss-animate"
+        ]
+      },
+      {
+        "file": "apps/admin/tsconfig.json",
+        "hash": "16578093758624047025"
+      },
+      {
+        "file": "apps/admin/tsconfig.spec.json",
+        "hash": "4919308245432237962"
+      },
+      {
+        "file": "apps/admin/types/JTTable.ts",
+        "hash": "6582346018903575407"
+      },
+      {
+        "file": "apps/admin/types/List.ts",
+        "hash": "9689912604743697313"
+      },
+      {
+        "file": "apps/admin/utils/helper/helper.ts",
+        "hash": "16727142875719508775"
+      },
+      {
+        "file": "apps/admin/validators/CreateRegion/Region.ts",
+        "hash": "2761223891955983065",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/validators/CreateSafetyTraining/SafetyTraining.tsx",
+        "hash": "7532272178004189705",
+        "deps": [
+          "npm:zod"
+        ]
+      },
+      {
+        "file": "apps/admin/validators/CrerateServiceType/ServiceType.ts",
+        "hash": "14044726929576256506",
+        "deps": [
+          "npm:zod"
+        ]
+      }
+    ]
+  }
+}

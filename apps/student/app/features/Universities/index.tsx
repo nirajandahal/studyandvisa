@@ -89,7 +89,7 @@ const University = ({ searchParams }: any) => {
     <section className="mx-auto bg-white">
       <MaxWidthWrapper>
         <section className="pt-2 pb-5 bg-white">
-          <div className="container mx-auto my-3">
+          <div className="px-5 sm:px-10 md:px-14 lg:px-24 my-3">
             <Breadcrumb separator={'>'}>
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
               <Breadcrumb.Item className="text-dark-blue font-bold">
@@ -103,25 +103,19 @@ const University = ({ searchParams }: any) => {
           </div>
         </section>
 
-        <section className="container bg-white">
+        <section className="px-5 sm:px-10 md:px-14 lg:px-24 bg-white ">
           {university.length === 0 ? (
-            <Empty description="No Universities found" />
+            <div className="py-32 flex w-full items-center justify-center">
+              <Empty description="No Universities found" />
+            </div>
           ) : (
             <>
-              <section className="py-3 md:py-5 bg-white">
-                <Row gutter={[16, 16]}>
-                  <Col xs={24} lg={18}>
-                    {/* Enable filter if needed */}
-                  </Col>
-                </Row>
-              </section>
-
               <section className="w-full py-3 md:py-4 font-Open_Sans leading-1.5 text-base">
-                <div className="bg-white flex flex-wrap gap-6 md:gap-6 justify-center md:justify-start mx-auto md:ml-10">
+                <div className="bg-white card-grid">
                   {paginatedData?.map((uni) => (
                     <div
                       key={uni?.id}
-                      className="border border-gray-500 h-auto rounded w-[400px] sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col"
+                      className="border border-gray-500 h-auto rounded-xl flex flex-col"
                     >
                       <div className="flex justify-end p-3 md:p-4">
                         <Star
@@ -157,11 +151,11 @@ const University = ({ searchParams }: any) => {
                             )}
                           </div>
 
-                          <div className="flex flex-col font-Open_Sans flex-grow gap-2 md:gap-3">
-                            <h2 className="font-bold text-dark-blue text-lg md:text-xl">
+                          <div className="flex flex-col font-Open_Sans flex-grow ">
+                            <h2 className="font-bold text-dark-blue text-lg md:text-xl ">
                               {uni?.universityName}
                             </h2>
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm text-gray-600 mb-3">
                               {uni?.universityAddress}
                             </span>
                             <span className="text-sm text-gray-600">
@@ -169,8 +163,8 @@ const University = ({ searchParams }: any) => {
                                 ? `${uni.description.substring(0, 100)}...`
                                 : uni.description}
                             </span>
-                            <div className="">
-                              <div className="bg-gray-100 flex justify-between items-center pl-2 mb-2">
+                            <div className="mt-3">
+                              <div className=" flex justify-between items-center pl-2 mb-2">
                                 <span className="text-sm inline-block text-dark-blue font-semibold">
                                   World Ranking:
                                 </span>{' '}
@@ -178,14 +172,14 @@ const University = ({ searchParams }: any) => {
                                   {uni?.worldRanking}
                                 </button>
                               </div>
-                              <div className="bg-gray-100 flex justify-between items-center pl-2 mb-2">
+                              <div className=" flex justify-between items-center pl-2 mb-2">
                                 <span className="text-sm inline-block text-dark-blue font-semibold">
                                   Country Ranking:
                                 </span>{' '}
                                 <button className="w-16 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-secondary-yellow text-center rounded-full inline-block">
                                   {uni?.countryRanking}
                                 </button>
-                              </div>  
+                              </div>
                             </div>
                             {/* what is this below section? */}
                             {uni?.isEnglishCourseAvailable && (
