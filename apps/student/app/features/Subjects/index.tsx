@@ -127,11 +127,11 @@ const Subject = ({ searchParams }: any) => {
           <div className="container mx-auto my-3">
             <Breadcrumb separator={'>'}>
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
-              <Breadcrumb.Item className="text-dark-blue">
+              <Breadcrumb.Item className="text-dark-blue font-semibold">
                 Courses
               </Breadcrumb.Item>
             </Breadcrumb>
-            <span className="text-navy-blue">
+            <span className="text-gray-600 italic">
               {universities.length} Universities offering {subjectName} courses
             </span>
           </div>
@@ -173,9 +173,9 @@ const Subject = ({ searchParams }: any) => {
               </Col>
             </Row>
           </section>
-          <section className="flex py-4 f leading-1.5 text-xl">
+          <section className="flex py-4 font-['Roboto'] leading-1.5 text-xl">
             <div className="w-full md:w-3/5">
-              <div className="bg-white flex flex-col gap-8 md:gap-20 mx-auto md:ml-10 md:flex-row md:flex-wrap">
+              <div className="bg-white flex flex-col gap-8 mx-auto md:flex-row md:flex-wrap">
                 {paginatedUniversities.length > 0 ? (
                   paginatedUniversities.map((university) => (
                     <Link
@@ -185,7 +185,7 @@ const Subject = ({ searchParams }: any) => {
                     >
                       <div
                         key={university?.id}
-                        className="border border-gray-500 h-auto md:w-1/2 lg:w-2/3 sm:2/3 flex flex-col p-4 md:p-6 rounded-md shadow-md"
+                        className="border border-gray-500 h-auto mx-3 flex flex-col p-4 md:p-6 rounded-md shadow-md"
                       >
                         <div className="flex items-center justify-between mb-4">
                           <div className="flex items-center">
@@ -195,24 +195,24 @@ const Subject = ({ searchParams }: any) => {
                                   imgPath: university?.universityImage,
                                   size: 'lg',
                                 })}
-                                alt="University Image"
+                                alt="Australian university"
                                 className="object-cover"
                                 height={400}
                                 width={400}
                               />
                             </div>
                             <div>
-                              <h2 className="text-lg font-semibold">
+                              <h2 className="text-lg font-semibold ">
                                 {university?.universityName}
                               </h2>
-                              <p className="text-gray-600">
+                              <p className="text-gray-600 text-sm ">
                                 {university?.destination?.name}
                               </p>
                             </div>
                           </div>
                         </div>
                         <div>
-                          <p className="text-gray-700">
+                          <p className="text-gray-600 mb-2  text-base">
                             {university?.description.length >
                             maxLengthOfDescription
                               ? university?.description.substring(
@@ -226,11 +226,11 @@ const Subject = ({ searchParams }: any) => {
                           href={`/course/details?course=${university.courses[0].slug}`}
                         >
                           <div>
-                            <p className="flex text-dark-blue font-bold text-xl f">
+                            <p className="flex text-center text-dark-blue font-bold text-base ">
                               <Eye /> View{' '}
                               {university.courses[0]?.subject.length} Subjects{' '}
                               {university.courses[0].courseName}{' '}
-                              <ChevronRight className="mt-1 h-5" />
+                              <ChevronRight className="h-5" />
                             </p>
                           </div>
                         </Link>

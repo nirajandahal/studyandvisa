@@ -88,15 +88,15 @@ const University = ({ searchParams }: any) => {
   return (
     <section className="mx-auto bg-white">
       <MaxWidthWrapper>
-        <section className="py-5 bg-white">
+        <section className="pt-2 pb-5 bg-white">
           <div className="container mx-auto my-3">
             <Breadcrumb separator={'>'}>
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
-              <Breadcrumb.Item className="text-dark-blue">
-                All universities in {capitalizeFirstLetter(country)}
+              <Breadcrumb.Item className="text-dark-blue font-bold">
+                All Universities in {capitalizeFirstLetter(country)}
               </Breadcrumb.Item>
             </Breadcrumb>
-            <span className="text-sm text-navy-blue hover:text-gray-600">
+            <span className="text-sm text-navy-blue hover:text-gray-500 italic">
               Explore {country}'s diverse universities! Filter by popularity,
               reviews, rankings, and English courses to find your perfect fit
             </span>
@@ -158,31 +158,36 @@ const University = ({ searchParams }: any) => {
                           </div>
 
                           <div className="flex flex-col font-Open_Sans flex-grow gap-2 md:gap-3">
-                            <span className="font-bold text-dark-blue text-lg md:text-xl">
+                            <h2 className="font-bold text-dark-blue text-lg md:text-xl">
                               {uni?.universityName}
-                            </span>
-                            <span className="text-sm text-gray-900">
+                            </h2>
+                            <span className="text-sm text-gray-600">
                               {uni?.universityAddress}
                             </span>
-                            <span className="text-sm text-gray-900">
+                            <span className="text-sm text-gray-600">
                               {uni?.description.length > 100
                                 ? `${uni.description.substring(0, 100)}...`
                                 : uni.description}
                             </span>
-                            <div className="flex flex-wrap gap-2 md:gap-4">
-                              <span className="text-sm inline-block">
-                                World Ranking:
-                              </span>{' '}
-                              <button className="w-20 h-7 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-dark-blue text-white text-center rounded-full inline-block">
-                                {uni?.worldRanking}
-                              </button>
-                              <span className="text-sm inline-block">
-                                Country Ranking:
-                              </span>{' '}
-                              <button className="w-20 h-7 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-dark-blue text-white text-center rounded-full inline-block">
-                                {uni?.countryRanking}
-                              </button>
+                            <div className="">
+                              <div className="bg-gray-100 flex justify-between items-center pl-2 mb-2">
+                                <span className="text-sm inline-block text-dark-blue font-semibold">
+                                  World Ranking:
+                                </span>{' '}
+                                <button className="w-16 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-secondary-yellow text-center rounded-full inline-block">
+                                  {uni?.worldRanking}
+                                </button>
+                              </div>
+                              <div className="bg-gray-100 flex justify-between items-center pl-2 mb-2">
+                                <span className="text-sm inline-block text-dark-blue font-semibold">
+                                  Country Ranking:
+                                </span>{' '}
+                                <button className="w-16 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-secondary-yellow text-center rounded-full inline-block">
+                                  {uni?.countryRanking}
+                                </button>
+                              </div>  
                             </div>
+                            {/* what is this below section? */}
                             {uni?.isEnglishCourseAvailable && (
                               <span className="bg-dark-blue rounded-full text-white text-center text-sm md:text-base px-2 py-1 md:px-3 md:py-2">
                                 English courses available
