@@ -4,10 +4,10 @@ import { Card, Typography } from 'antd';
 const UniversityFinanceDetails = ({ financeDetails }: any) => {
   return (
     <section className="py-4">
-      <div className="flex flex-col gap-4">
-        <span className="text-bold text-gray-500 text-1xl">
-          How much will it cost?
-        </span>
+      <span className="text-bold text-gray-500 text-1xl">
+        How much will it cost?
+      </span>
+      <div className="card-grid mt-5">
         <Card className="bg-white w-full">
           <Typography.Title level={5}> Tuition Fee</Typography.Title>
           <Typography.Paragraph>

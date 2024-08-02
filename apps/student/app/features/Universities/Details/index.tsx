@@ -132,7 +132,7 @@ const UniversityDetails = ({ searchParams }: any) => {
     <section className="mx-auto">
       <MaxWidthWrapper>
         <section className="py-5 bg-white">
-          <div className="container mx-auto my-3">
+          <div className="px-5 sm:px-10 md:px-14 lg:px-24 mx-auto my-3">
             <Breadcrumb separator=">">
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
               <Breadcrumb.Item className="text-dark-blue">
@@ -145,11 +145,11 @@ const UniversityDetails = ({ searchParams }: any) => {
           </div>
         </section>
 
-        <section className="container bg-white f leading-1.5">
+        <section className="px-5 sm:px-10 md:px-14 lg:px-24 bg-white f leading-1.5">
           {universityDetails ? (
             <>
               <section className="py-4">
-                <div className="flex flex-col text-black md:flex-row gap-6 justify-center md:justify-start mx-auto md:ml-10 p-6">
+                <div className="flex flex-col text-black md:flex-row gap-6 justify-center md:justify-start  ">
                   <div className="flex items-center justify-center border border-gray-900 w-10 h-10 md:w-40 md:h-40">
                     {universityDetails.universityImage ? (
                       <Image
@@ -188,7 +188,7 @@ const UniversityDetails = ({ searchParams }: any) => {
               </section>
 
               <section className="py-4 font-Open_Sans">
-                <div className="bg-white p-6 mx-auto md:ml-10">
+                <div className="bg-white  ">
                   <h1 className="text-dark-blue font-bold text-2xl">
                     University Overview
                   </h1>{' '}
@@ -199,7 +199,7 @@ const UniversityDetails = ({ searchParams }: any) => {
               </section>
 
               <section className="py-4">
-                <div className="bg-white p-6 mx-auto md:ml-10">
+                <div className="bg-white  ">
                   <h1 className="text-dark-blue font-bold text-2xl">
                     University Ranking
                   </h1>
@@ -211,7 +211,7 @@ const UniversityDetails = ({ searchParams }: any) => {
               </section>
 
               <section className="py-4">
-                <div className="bg-white p-6 mx-auto md:ml-10">
+                <div className="bg-white  ">
                   <h1 className="text-dark-blue font-bold text-2xl">
                     Finance Details
                   </h1>
@@ -222,7 +222,7 @@ const UniversityDetails = ({ searchParams }: any) => {
               </section>
 
               <section className="py-4 font-Open_Sans">
-                <div className="bg-white p-6 mx-auto md:ml-10">
+                <div className="bg-white  ">
                   <h1 className="text-dark-blue font-bold text-2xl">
                     Courses at {universityDetails?.universityName}
                   </h1>
