@@ -124,7 +124,7 @@ const Subject = ({ searchParams }: any) => {
     <section className="mx-auto">
       <MaxWidthWrapper>
         <section className={'py-5 bg-gray-50'}>
-          <div className="container mx-auto my-3">
+          <div className="px-5 sm:px-10 md:px-14 lg:px-24 my-3">
             <Breadcrumb separator={'>'}>
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
               <Breadcrumb.Item className="text-dark-blue font-semibold">
@@ -136,7 +136,7 @@ const Subject = ({ searchParams }: any) => {
             </span>
           </div>
         </section>
-        <div className="container bg-gray-50">
+        <div className="px-5 sm:px-10 md:px-14 lg:px-24 bg-gray-50">
           <section className={'py-5 bg-white'}>
             <Row gutter={[16, 16]}>
               <Col
@@ -173,9 +173,9 @@ const Subject = ({ searchParams }: any) => {
               </Col>
             </Row>
           </section>
-          <section className="flex py-4 font-['Roboto'] leading-1.5 text-xl">
-            <div className="w-full md:w-3/5">
-              <div className="bg-white flex flex-col gap-8 mx-auto md:flex-row md:flex-wrap">
+          <section className="flex flex-col gap-5 md:flex-row py-4 font-['Roboto'] leading-1.5 text-xl">
+            <div className="w-full md:w-1/2">
+              <div className=" flex flex-col gap-8 mx-auto md:flex-row md:flex-wrap">
                 {paginatedUniversities.length > 0 ? (
                   paginatedUniversities.map((university) => (
                     <Link
@@ -185,7 +185,7 @@ const Subject = ({ searchParams }: any) => {
                     >
                       <div
                         key={university?.id}
-                        className="border border-gray-500 h-auto mx-3 flex flex-col p-4 md:p-6 rounded-md shadow-md"
+                        className="bg-white border border-gray-500 h-auto flex flex-col p-4 md:p-6 rounded-md shadow-md"
                       >
                         <div className="flex items-center justify-between mb-4">
                           <div className="flex items-center">
@@ -238,7 +238,7 @@ const Subject = ({ searchParams }: any) => {
                     </Link>
                   ))
                 ) : (
-                  <div className="flex mx-auto justify-center my-10">
+                  <div className="bg-white flex mx-auto justify-center my-10">
                     <Empty
                       description={
                         <Typography.Text className="text-2xl">
@@ -250,8 +250,8 @@ const Subject = ({ searchParams }: any) => {
                 )}
               </div>
             </div>
-            <div className="mb-5 w-full md:w-2/5">
-              <div className="rounded-lg w-full px-5 flex justify-center shadow-md flex flex-col justify-between h-full">
+            <div className="mb-5 w-full md:w-1/2">
+              <div className="rounded-xl overflow-hidden w-full flex justify-center shadow-md flex flex-col justify-between h-full">
                 <div className="flex-1">
                   <RegisterForm />
                 </div>

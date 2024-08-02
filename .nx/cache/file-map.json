@@ -1096,7 +1096,7 @@
       },
       {
         "file": "apps/student/app/features/RegisterForm/index.tsx",
-        "hash": "18348192026610833616",
+        "hash": "13705815050959017",
         "deps": [
           "npm:react",
           "npm:react-hook-form",
@@ -1118,7 +1118,7 @@
       },
       {
         "file": "apps/student/app/features/Subjects/index.tsx",
-        "hash": "16306120435639744399",
+        "hash": "2526476324857341414",
         "deps": [
           "npm:react",
           "npm:antd",
