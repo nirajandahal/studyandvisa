@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative py-10 lg:py-20  bg-primary-blue w-full flex  text-base flex-col lg:flex-row lg:justify-between items-center px-5 sm:px-10 md:px-14 lg:px-24">
+      <div className="relative py-10 lg:py-20  bg-dark-blue w-full flex  text-base flex-col lg:flex-row lg:justify-between items-center px-5 sm:px-10 md:px-14 lg:px-24">
         {/* Left Side: Text */}
         <div className="max-w-3xl lg:w-1/2 lg:pr-12 text-white mx-auto lg:pl-0">
           {/* Added padding on the left */}
@@ -18,6 +18,13 @@ export const HeroSection = () => {
             Start your journey to discover new horizons, expand your knowledge,
             and create a world of possibilities.
           </p>
+          <button
+            type="button"
+            className="w-full md:w-52 h-12 px-6 text-dark-blue bg-secondary-yellow flex justify-center items-center rounded mt-5 text-base font-bold"
+            //onClick={handleViewAllClick}
+          >
+            Learn More
+          </button>
         </div>
         {/* Right Side: Image */}
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex ">

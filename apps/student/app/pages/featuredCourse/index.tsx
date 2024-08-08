@@ -38,29 +38,35 @@ export const FeaturedCourse = () => {
 
   return (
     <section className="my-5 ">
-      <MaxWidthWrapper className="py-5 lg:py-10">
-        <div className="flex justify-center">
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-center text-dark-blue">
-            What to Study? Checkout some of popular courses
+      <MaxWidthWrapper className="pb-5 lg:pb-10">
+        <div className="flex justify-center flex-col">
+          <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-center text-dark-blue">
+            What to Study? Checkout some of
+          </h2>
+          <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-center text-dark-blue">
+            popular courses
           </h2>
         </div>
-        <div className="mt-5  lg:mt-10 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8">
+        <div className="mt-5  lg:mt-10 card-grid">
           {courses.slice(0, 3).map((course) => (
             <div
               key={course?.id}
-              className="bg-white shadow-lg rounded-lg overflow-hidden"
+              className="bg-dark-blue shadow-lg rounded-lg overflow-hidden"
             >
-              <div className="p-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 f ">
+              <div className="p-4 h-72">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 f text-white">
                   {course?.courseName}
                 </h3>
-                <hr className="w-full border-t border-blue-500 mb-4 mx-auto" />
+                <hr className="w-full border-t-2 border-[#e7b416] mb-4 mx-auto" />
 
-                <ul className="text-sm text-muted-foreground">
+                <ul className="text-sm text-muted-foreground text-white">
                   {course.subject.length > 0 ? (
                     course.subject.slice(0, 3).map((sub, index) => (
                       <Link href={`/course/details?course=${course?.slug}`}>
-                        <li key={index} className="flex items-center gap-2 f">
+                        <li
+                          key={index}
+                          className="flex items-center gap-3 mt-1 f"
+                        >
                           <a className="flex items-center gap-2">
                             <ChevronRight size={16} />
                             {sub.subjectName}

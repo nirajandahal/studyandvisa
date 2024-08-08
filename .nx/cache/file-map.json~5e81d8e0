@@ -366,7 +366,7 @@
       },
       {
         "file": "apps/student/app/pages/Blogs/SingleBlog/index.tsx",
-        "hash": "4927050111796723571",
+        "hash": "6974298329929922138",
         "deps": [
           "npm:react",
           "npm:next",
@@ -375,7 +375,7 @@
       },
       {
         "file": "apps/student/app/pages/Blogs/index.tsx",
-        "hash": "5646852960121629322",
+        "hash": "3926247742432920157",
         "deps": [
           "npm:react",
           "ui-components",
@@ -384,7 +384,7 @@
       },
       {
         "file": "apps/student/app/pages/Countries/index.tsx",
-        "hash": "16461257014985405269",
+        "hash": "13803179769091145956",
         "deps": [
           "npm:react",
           "npm:libs/utils",
@@ -393,14 +393,14 @@
       },
       {
         "file": "apps/student/app/pages/Country/index.tsx",
-        "hash": "14348839710182053108",
+        "hash": "7980631803058121679",
         "deps": [
           "npm:next"
         ]
       },
       {
         "file": "apps/student/app/pages/HeroSection/index.tsx",
-        "hash": "5514669596406122041",
+        "hash": "15585585361488810160",
         "deps": [
           "npm:next"
         ]
@@ -414,7 +414,7 @@
       },
       {
         "file": "apps/student/app/pages/featuredCourse/index.tsx",
-        "hash": "4293802442019803055",
+        "hash": "15239527588901981945",
         "deps": [
           "npm:react",
           "npm:lucide-react",
@@ -586,7 +586,7 @@
       },
       {
         "file": "apps/student/components/Footer.tsx",
-        "hash": "231008333757160301",
+        "hash": "3599556037757796480",
         "deps": [
           "npm:next",
           "ui-components",
