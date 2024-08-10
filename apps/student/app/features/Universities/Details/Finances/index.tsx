@@ -3,8 +3,8 @@ import { Card, Typography } from 'antd';
 
 const UniversityFinanceDetails = ({ financeDetails }: any) => {
   return (
-    <section className="py-4">
-      <span className="text-bold text-gray-500 text-1xl">
+    <section className="py-4 flex flex-col gap-2">
+      {/* <span className="text-bold text-gray-500 text-1xl">
         How much will it cost?
       </span>
       <div className="card-grid mt-5">
@@ -30,7 +30,25 @@ const UniversityFinanceDetails = ({ financeDetails }: any) => {
             </span>
           </Typography.Paragraph>
         </Card>
-        {/* Add more Card components with other relevant information */}
+       
+      </div> */}
+      <div className="pl-10 pr-3 py-3 bg-[#EBF5FF] flex items-center justify-between">
+        <h1 className="text-base">Tuition Fee</h1>
+        <h2 className="bg-secondary-yellow  py-2 font-bold text-xl min-w-16 px-3 text-center">
+          {financeDetails?.tuitionFee}( {financeDetails?.currency}
+        </h2>
+      </div>
+      <div className="pl-10 pr-3 py-3 bg-[#EBF5FF] flex items-center justify-between">
+        <h1 className="text-base">Financial Aids</h1>
+        <h2 className="bg-secondary-yellow  py-2 font-bold text-xl w-16 px-3 text-center">
+          {financeDetails?.financialAidAvailable ? 'Yes' : 'No'}
+        </h2>
+      </div>
+      <div className="pl-10 pr-3 py-3 bg-[#EBF5FF] flex items-center justify-between">
+        <h1 className="text-base">Scholarships</h1>
+        <h2 className="bg-secondary-yellow  py-2 font-bold text-xl w-16 px-3 text-center">
+          {financeDetails?.scholarshipDetails === 'yes' ? 'Yes' : 'No'}
+        </h2>
       </div>
     </section>
   );
