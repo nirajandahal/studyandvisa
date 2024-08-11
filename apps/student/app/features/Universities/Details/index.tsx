@@ -10,6 +10,7 @@ import UniversityRankingCard from './RankingCard';
 import UniversityFinanceDetails from './Finances';
 import { renderImage } from 'libs/services/helper';
 import DetailBanner from 'apps/student/components/DetailBanner';
+import CustomSearch from 'apps/student/components/CustomSearch.tsx';
 
 interface IUniversity {
   id: string;
@@ -144,12 +145,16 @@ const UniversityDetails = ({ searchParams }: any) => {
             </div>
 
             <div className="flex gap-4 flex flex-col">
-          {universityDetails?.worldRanking &&    <span className="text-white">
-                World Ranking: {universityDetails?.worldRanking}
-              </span>}
-              {universityDetails?.countryRanking && <span className="text-white">
-                Country Ranking: {universityDetails?.countryRanking}
-              </span>}
+              {universityDetails?.worldRanking && (
+                <span className="text-white">
+                  World Ranking: {universityDetails?.worldRanking}
+                </span>
+              )}
+              {universityDetails?.countryRanking && (
+                <span className="text-white">
+                  Country Ranking: {universityDetails?.countryRanking}
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -157,8 +162,8 @@ const UniversityDetails = ({ searchParams }: any) => {
     );
   }
   return (
-    <section className="mx-auto">
-      <DetailBanner height={'350px'} component={<Component />} />
+    <section className="mx-auto overflow-hidden">
+      <DetailBanner height="h-[350px]" component={<Component />} />
       <MaxWidthWrapper>
         <section className="pb-5 pt-3 bg-white">
           <div className="px-5 sm:px-10 md:px-14 lg:px-24 mx-auto my-3">
@@ -173,6 +178,7 @@ const UniversityDetails = ({ searchParams }: any) => {
             </Breadcrumb>
           </div>
         </section>
+
 
         <section className="px-5 sm:px-10 md:px-14 lg:px-24 bg-white f leading-1.5 flex items-start flex-col md:flex-row">
           <div className="w-full md:w-2/3 md:pr-20">

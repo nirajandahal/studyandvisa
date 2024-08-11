@@ -10,6 +10,8 @@ import Link from 'next/link';
 import { renderImage } from 'libs/services/helper';
 import Image from 'next/image';
 import { deleteCookie, getCookie, setCookie } from 'cookies-next';
+import DetailBanner from 'apps/student/components/DetailBanner';
+import CustomSearch from 'apps/student/components/CustomSearch.tsx';
 
 interface UniversityData {
   id: string;
@@ -85,10 +87,24 @@ const University = ({ searchParams }: any) => {
   const endIndex = Math.min(startIndex + pagination.limit, university.length);
   const paginatedData = university.slice(startIndex, endIndex);
 
+  function Component() {
+    return (
+      <section className="py-4">
+        <h1 className="text-white text-2xl md:text-3xl font-bold">
+          All subject areas for Undergraduate courses.
+        </h1>
+        <h2 className="text-white text-xl mt-4">
+          Explore the subject areas below to view related courses and find the
+          course that’s right for you.
+        </h2>
+      </section>
+    );
+  }
   return (
-    <section className="mx-auto bg-white">
+    <section className="mx-auto bg-white overflow-hidden">
+      <DetailBanner height="h-[250px]" component={<Component />} />
       <MaxWidthWrapper>
-        <section className="pt-2 pb-5 bg-white">
+        <section className="pt-3 pb-5 bg-white">
           <div className="px-5 sm:px-10 md:px-14 lg:px-24 my-3">
             <Breadcrumb separator={'>'}>
               <Breadcrumb.Item className="text-dark-blue">Home</Breadcrumb.Item>
@@ -102,8 +118,10 @@ const University = ({ searchParams }: any) => {
             </span>
           </div>
         </section>
-
-        <section className="px-5 sm:px-10 md:px-14 lg:px-24 bg-white ">
+        <section className="flex justify-center md:justify-start  px-5 sm:px-10 md:px-14 lg:px-24 ">
+          <CustomSearch />
+        </section>
+        <section className="px-5 sm:px-10 md:px-14 lg:px-24 bg-white  mt-14">
           {university.length === 0 ? (
             <div className="py-32 flex w-full items-center justify-center">
               <Empty description="No Universities found" />

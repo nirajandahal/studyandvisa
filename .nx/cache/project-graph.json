@@ -32,6 +32,57 @@
         "implicitDependencies": []
       }
     },
+    "web-e2e": {
+      "name": "web-e2e",
+      "type": "e2e",
+      "data": {
+        "name": "web-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/web-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/web-e2e/cypress.config.ts",
+              "devServerTarget": "web:serve:development",
+              "testingType": "e2e"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "web:serve:production"
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/web-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "web"
+        ],
+        "root": "apps/web-e2e"
+      }
+    },
     "student": {
       "name": "student",
       "type": "app",
@@ -130,57 +181,6 @@
         "tags": [],
         "root": "apps/student",
         "implicitDependencies": []
-      }
-    },
-    "web-e2e": {
-      "name": "web-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "web-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/web-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/web-e2e/cypress.config.ts",
-              "devServerTarget": "web:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "web:serve:production"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/web-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "web"
-        ],
-        "root": "apps/web-e2e"
       }
     },
     "admin": {
@@ -12056,6 +12056,23 @@
         "type": "static"
       }
     ],
+    "web-e2e": [
+      {
+        "source": "web-e2e",
+        "target": "web",
+        "type": "implicit"
+      },
+      {
+        "source": "web-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "web-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
     "student": [
       {
         "source": "student",
@@ -12130,23 +12147,6 @@
       {
         "source": "student",
         "target": "npm:tailwindcss-animate",
-        "type": "static"
-      }
-    ],
-    "web-e2e": [
-      {
-        "source": "web-e2e",
-        "target": "web",
-        "type": "implicit"
-      },
-      {
-        "source": "web-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "web-e2e",
-        "target": "npm:@nx/cypress",
         "type": "static"
       }
     ],
