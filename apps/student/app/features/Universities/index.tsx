@@ -133,43 +133,26 @@ const University = ({ searchParams }: any) => {
                   {paginatedData?.map((uni) => (
                     <div
                       key={uni?.id}
-                      className="border border-gray-500 h-auto rounded-xl flex flex-col"
+                      className="border border-gray-500 h-auto rounded-xl flex flex-col overflow-hidden"
                     >
-                      <div className="flex justify-end p-3 md:p-4">
-                        <Star
-                          onClick={() => handleFavouriteUniversity(uni?.id)}
-                          color={
-                            selectedUniversitiesForFavourite.includes(uni?.id)
-                              ? '#FFD700'
-                              : undefined
-                          }
-                          style={{ cursor: 'pointer' }}
-                        />
-                      </div>
-
                       <Link href={`/university/details?uni=${uni?.slug}`}>
-                        <div className="flex flex-col p-3 md:p-4">
+                        <div className="flex flex-col ">
                           <div className="flex items-center w-full justify-center mb-3 md:mb-4">
-                            {uni.universityImage ? (
+                            {uni.universityImage && (
                               <Image
                                 src={renderImage({
                                   imgPath: uni?.universityImage,
                                   size: 'md',
                                 })}
                                 alt="University Image"
-                                className="object-cover w-16 h-16 md:w-24 md:h-24"
+                                className="object-cover w-full h-full bg-[#000]"
                                 width={100}
                                 height={100}
-                              />
-                            ) : (
-                              <Icons.logo
-                                className="w-16 h-16 md:w-24 md:h-24 bg-gray-200 rounded-full flex items-center justify-center"
-                                color="bg-electric-violet"
                               />
                             )}
                           </div>
 
-                          <div className="flex flex-col font-Open_Sans flex-grow ">
+                          <div className="flex flex-col font-Open_Sans flex-grow px-5 ">
                             <h2 className="font-bold text-dark-blue text-lg md:text-xl ">
                               {uni?.universityName}
                             </h2>
@@ -186,17 +169,17 @@ const University = ({ searchParams }: any) => {
                                 <span className="text-sm inline-block text-dark-blue font-semibold">
                                   World Ranking:
                                 </span>{' '}
-                                <button className="w-16 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-secondary-yellow text-center rounded-full inline-block">
+                                <h2 className="bg-secondary-yellow  py-1 font-semibold text-lg w-14 text-center">
                                   {uni?.worldRanking}
-                                </button>
+                                </h2>
                               </div>
                               <div className=" flex justify-between items-center pl-2 mb-2">
                                 <span className="text-sm inline-block text-dark-blue font-semibold">
                                   Country Ranking:
                                 </span>{' '}
-                                <button className="w-16 px-2 md:px-4 py-1 mb-2 md:mb-0 bg-secondary-yellow text-center rounded-full inline-block">
+                                <h2 className="bg-secondary-yellow  py-1 font-semibold text-lg w-14 text-center">
                                   {uni?.countryRanking}
-                                </button>
+                                </h2>
                               </div>
                             </div>
                             {/* what is this below section? */}

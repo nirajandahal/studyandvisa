@@ -9,8 +9,6 @@ import {
   DatePicker,
   Checkbox,
   notification,
-  Row,
-  Col,
 } from 'antd';
 import { fetchStudyLevels } from '../../api/studyLevel';
 import { fetchAllUniversityByDestination } from '../../api/studyDestination';
@@ -156,158 +154,121 @@ const RegisterForm = () => {
 
   return (
     <div className="flex bg-yellow-200 justify-center font-['Open_Sans']">
-      <div className="w-full ">
+      <div className="w-full max-w-md sm:w-full">
         <Form onFinish={handleSubmit(onSubmit)} className="px-8 pb-8">
           <div className="text-center mb-8">
-            <h1 className="text-2xl text-dark-blue mt-5 text-center">
+            <h1 className="text-2xl font-bold text-dark-blue mt-5 text-center">
               Get an Appointment
             </h1>
           </div>
-          <Row gutter={16}>
-            <Col xs={24} md={8}>
-              {/* First Name Input Field */}
-              <Form.Item
-                validateStatus={errors.firstName ? 'error' : ''}
-                help={errors.firstName ? errors.firstName.message : null}
+          {/* First Name Input Field */}
+          <Form.Item
+            validateStatus={errors.firstName ? 'error' : ''}
+            help={errors.firstName ? errors.firstName.message : null}
+          >
+            <Input
+              placeholder="First Name"
+              {...register('firstName')}
+              className="flex-grow text-black border-1 border-gray-400"
+              style={{ height: '40px' }}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+          </Form.Item>
+          {/* Middle Name Input Field */}
+          <Form.Item
+            validateStatus={errors.middleName ? 'error' : ''}
+            help={errors.middleName ? errors.middleName.message : null}
+          >
+            <Input
+              placeholder="Middle Name"
+              {...register('middleName')}
+              className="flex-grow text-black  border-1 border-gray-400"
+              style={{ height: '40px' }}
+              onChange={(e) => setMiddleName(e.target.value)}
+            />
+          </Form.Item>
+          {/* Last Name Input Field */}
+          <Form.Item
+            validateStatus={errors.lastName ? 'error' : ''}
+            help={errors.lastName ? errors.lastName.message : null}
+          >
+            <Input
+              placeholder="Last Name"
+              {...register('lastName')}
+              className="flex-grow text-black  border-1 border-gray-400"
+              style={{ height: '40px' }}
+              onChange={(e) => setLastName(e.target.value)}
+            />
+          </Form.Item>
+          {/* Email Input Field */}
+          <Form.Item
+            validateStatus={errors.email ? 'error' : ''}
+            help={errors.email ? errors.email.message : null}
+          >
+            <Input
+              placeholder="Email"
+              {...register('email')}
+              className="flex-grow h-10 text-black  border-1 border-gray-400"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Form.Item>
+          {/* Phone Input Field */}
+          <Form.Item
+            validateStatus={errors.phone ? 'error' : ''}
+            help={errors.phone ? errors.phone.message : null}
+          >
+            <Input
+              placeholder="Phone"
+              {...register('phone')}
+              className="flex-grow h-10 text-black  border-1 border-gray-400"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+          </Form.Item>
+          {/* Nationality Select Field */}
+          <Form.Item
+            validateStatus={errors.nationality ? 'error' : ''}
+            help={errors.nationality ? errors.nationality.message : null}
+          >
+            {countries && countries.length > 0 ? (
+              <Select
+                showSearch
+                placeholder="Nationality"
+                {...register('nationality')}
+                className="flex-grow h-10 text-black  border border-gray-400 rounded"
+                onChange={hanldeNationalityChange}
+                defaultValue={selectedNationality} // Use defaultValue instead of value
               >
-                <Input
-                  placeholder="First Name"
-                  {...register('firstName')}
-                  className="flex-grow text-black mb-4 border-1 border-gray-400"
-                  style={{ height: '40px' }}
-                  onChange={(e) => setFirstName(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-            <Col xs={24} md={8}>
-              {/* Middle Name Input Field */}
-              <Form.Item
-                validateStatus={errors.middleName ? 'error' : ''}
-                help={errors.middleName ? errors.middleName.message : null}
-              >
-                <Input
-                  placeholder="Middle Name"
-                  {...register('middleName')}
-                  className="flex-grow text-black mb-4 border-1 border-gray-400"
-                  style={{ height: '40px' }}
-                  onChange={(e) => setMiddleName(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-            <Col xs={24} md={8}>
-              <Form.Item
-                validateStatus={errors.lastName ? 'error' : ''}
-                help={errors.lastName ? errors.lastName.message : null}
-              >
-                <Input
-                  placeholder="Last Name"
-                  {...register('lastName')}
-                  className="flex-grow text-black mb-4 border-1 border-gray-400"
-                  style={{ height: '40px' }}
-                  onChange={(e) => setLastName(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-          </Row>
-          <Row gutter={16}>
-            <Col xs={24}>
-              {/* Last Name Input Field */}
-              <Form.Item
-                validateStatus={errors.lastName ? 'error' : ''}
-                help={errors.lastName ? errors.lastName.message : null}
-              >
-                <Input
-                  placeholder="Last Name"
-                  {...register('lastName')}
-                  className="flex-grow text-black mb-4 border-1 border-gray-400"
-                  style={{ height: '40px' }}
-                  onChange={(e) => setLastName(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-          </Row>
+                {countries.map((country) => (
+                  <Option key={country.code} value={country.name}>
+                    {country.name}
+                  </Option>
+                ))}
+              </Select>
+            ) : (
+              <p>No countries available</p>
+            )}
+          </Form.Item>
 
-          <Row gutter={16}>
-            <Col xs={24} md={12}>
-              {/* Email Input Field */}
-              <Form.Item
-                validateStatus={errors.email ? 'error' : ''}
-                help={errors.email ? errors.email.message : null}
-              >
-                <Input
-                  placeholder="Email"
-                  {...register('email')}
-                  className="flex-grow h-10 text-black mb-4 border-1 border-gray-400"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-            <Col xs={24} md={12}>
-              {/* Phone Input Field */}
-              <Form.Item
-                validateStatus={errors.phone ? 'error' : ''}
-                help={errors.phone ? errors.phone.message : null}
-              >
-                <Input
-                  placeholder="Phone"
-                  {...register('phone')}
-                  className="flex-grow h-10 text-black mb-4 border-1 border-gray-400"
-                  onChange={(e) => setPhone(e.target.value)}
-                />
-              </Form.Item>
-            </Col>
-          </Row>
-          <Row gutter={16}>
-            <Col xs={24} md={12}>
-              {/* Nationality Select Field */}
-              <Form.Item
-                validateStatus={errors.nationality ? 'error' : ''}
-                help={errors.nationality ? errors.nationality.message : null}
-              >
-                {countries && countries.length > 0 ? (
-                  <Select
-                    showSearch
-                    placeholder="Nationality"
-                    {...register('nationality')}
-                    className="flex-grow h-10 text-black mb-4 border border-gray-400 rounded"
-                    onChange={hanldeNationalityChange}
-                    defaultValue={selectedNationality} // Use defaultValue instead of value
-                  >
-                    {countries.map((country) => (
-                      <Option key={country.code} value={country.name}>
-                        {country.name}
-                      </Option>
-                    ))}
-                  </Select>
-                ) : (
-                  <p>No countries available</p>
-                )}
-              </Form.Item>
-            </Col>
-            <Col xs={24} md={12}>
-              {/* Destination Select Field */}
-              <Form.Item
-                validateStatus={errors.destination ? 'error' : ''}
-                help={errors.destination ? errors.destination.message : null}
-              >
-                <Select
-                  showSearch
-                  placeholder="Select Destination Country"
-                  {...register('destination')}
-                  className="flex-grow h-10 text-black mb-4 border border-gray-400 rounded"
-                  onChange={handleDestinationChange}
-                  defaultValue={selectedDestination} // Use defaultValue instead of value
-                >
-                  {destinations.map((dest) => (
-                    <Option key={dest.id} value={dest.id}>
-                      {dest.name}
-                    </Option>
-                  ))}
-                </Select>
-              </Form.Item>
-            </Col>
-          </Row>
-
+          {/* Destination Select Field */}
+          <Form.Item
+            validateStatus={errors.destination ? 'error' : ''}
+            help={errors.destination ? errors.destination.message : null}
+          >
+            <Select
+              showSearch
+              placeholder="Select Destination Country"
+              {...register('destination')}
+              className="flex-grow h-10 text-black  border border-gray-400 rounded"
+              onChange={handleDestinationChange}
+              defaultValue={selectedDestination} // Use defaultValue instead of value
+            >
+              {destinations.map((dest) => (
+                <Option key={dest.id} value={dest.id}>
+                  {dest.name}
+                </Option>
+              ))}
+            </Select>
+          </Form.Item>
           {/* Level Select Field */}
           <Form.Item
             validateStatus={errors.studyLevel ? 'error' : ''}
@@ -317,7 +278,7 @@ const RegisterForm = () => {
               showSearch
               placeholder="Select Level"
               {...register('studyLevel')}
-              className="flex-grow h-10 text-black mb-4 border border-gray-400 rounded"
+              className="flex-grow h-10 text-black  border border-gray-400 rounded"
               onChange={handleLevelChange}
               defaultValue={selectedLevel} // Use defaultValue instead of value
             >
@@ -336,7 +297,7 @@ const RegisterForm = () => {
             <DatePicker
               placeholder="Select Start Date"
               {...register('startDate')}
-              className="flex-grow text-black mb-4 border-1 border-gray-400"
+              className="flex-grow text-black  border-1 border-gray-400"
               style={{ width: '100%', height: '40px' }}
               onChange={(date, dateString) => {
                 if (typeof dateString === 'string') {
@@ -354,7 +315,7 @@ const RegisterForm = () => {
             <DatePicker
               placeholder="Select Birth Date"
               {...register('dateOfBirth')}
-              className="flex-grow text-black mb-4 border-1 border-gray-400"
+              className="flex-grow text-black  border-1 border-gray-400"
               style={{ width: '100%', height: '40px' }}
               onChange={(date, dateString) => {
                 if (typeof dateString === 'string') {

@@ -30,11 +30,191 @@ const SubjectList = ({
       <div className="w-full md:w-3/5">
         {currentSubjects.length > 0 ? (
           <Fragment>
-            <div className="grid gap-6 f md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+            <div className="card-grid">
               {currentSubjects.map((subject) => (
                 <div
                   key={subject?.id}
-                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition duration-300"
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden w-full md:max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
+                >
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-dark-blue">
+                      {subject?.subjectName}
+                    </h3>
+                    <hr className="my-2" />
+                    <p className="text-sm text-navy-blue">Level: {level}</p>
+                    <p className="text-sm text-navy-blue">
+                      Duration: {subject?.duration} years
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Start Date:{' '}
+                      {subject?.startDate
+                        ? new Intl.DateTimeFormat('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                          }).format(new Date(subject.startDate))
+                        : ''}
+                    </p>
+                    <p className="text-sm text-navy-blue">
+                      Fees: {financeDetails?.tuitionFee}{' '}
+                      {financeDetails?.currency}
+                    </p>
+                  </div>
+                </div>
+              ))}
+              {currentSubjects.map((subject) => (
+                <div
+                  key={subject?.id}
+                  className="bg-white w-full font-semibold rounded-lg shadow-md overflow-hidden max-w-[350px] border border-gray-200 hover:shadow-lg transition duration-300"
                 >
                   <div className="p-6">
                     <h3 className="text-2xl font-bold mb-4 text-dark-blue">
